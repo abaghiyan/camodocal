@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="calib\CameraCalibration.cc" />
+    <ClCompile Include="camera_models\Camera.cc" />
+    <ClCompile Include="camera_models\CameraFactory.cc" />
+    <ClCompile Include="camera_models\CataCamera.cc" />
+    <ClCompile Include="camera_models\CostFunctionFactory.cc" />
+    <ClCompile Include="camera_models\EquidistantCamera.cc" />
+    <ClCompile Include="camera_models\PinholeCamera.cc" />
+    <ClCompile Include="camera_models\ScaramuzzaCamera.cc" />
+    <ClCompile Include="chessboard\Chessboard.cc" />
+    <ClCompile Include="gpl\EigenQuaternionParameterization.cc" />
+    <ClCompile Include="gpl\gpl.cc" />
+    <ClCompile Include="intrinsic_calib.cc" />
+    <ClCompile Include="sparse_graph\Transform.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calib\CameraCalibration.h" />
+    <ClInclude Include="camera_models\Camera.h" />
+    <ClInclude Include="camera_models\CameraFactory.h" />
+    <ClInclude Include="camera_models\CataCamera.h" />
+    <ClInclude Include="camera_models\CostFunctionFactory.h" />
+    <ClInclude Include="camera_models\EquidistantCamera.h" />
+    <ClInclude Include="camera_models\PinholeCamera.h" />
+    <ClInclude Include="camera_models\ScaramuzzaCamera.h" />
+    <ClInclude Include="chessboard\Chessboard.h" />
+    <ClInclude Include="chessboard\ChessboardCorner.h" />
+    <ClInclude Include="chessboard\ChessboardQuad.h" />
+    <ClInclude Include="chessboard\Spline.h" />
+    <ClInclude Include="gpl\EigenQuaternionParameterization.h" />
+    <ClInclude Include="gpl\EigenUtils.h" />
+    <ClInclude Include="gpl\gpl.h" />
+    <ClInclude Include="sparse_graph\Transform.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dc683cf0-a9c7-4ddb-892e-e47cd5aa0847}</ProjectGuid>
+    <RootNamespace>Camodocal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\x64-windows\boost1_76_x64-windows\include;$(SolutionDir)dependencies\x64-windows\ceres_x64-windows\include;$(SolutionDir)dependencies\x64-windows\eigen3_x64-windows\include;$(SolutionDir)dependencies\x64-windows\gflags_x64-windows\include;$(SolutionDir)dependencies\x64-windows\glog_x64-windows\include;$(SolutionDir)dependencies\x64-windows\opencv4_x64-windows\include;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies\x64-windows\boost1_76_x64-windows\debug\lib;$(SolutionDir)dependencies\x64-windows\ceres_x64-windows\debug\lib;$(SolutionDir)dependencies\x64-windows\gflags_x64-windows\debug\lib;$(SolutionDir)dependencies\x64-windows\glog_x64-windows\debug\lib;$(SolutionDir)dependencies\x64-windows\opencv4_x64-windows\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_atomic-vc140-mt-gd.lib;boost_chrono-vc140-mt-gd.lib;boost_container-vc140-mt-gd.lib;boost_context-vc140-mt-gd.lib;boost_contract-vc140-mt-gd.lib;boost_coroutine-vc140-mt-gd.lib;boost_date_time-vc140-mt-gd.lib;boost_exception-vc140-mt-gd.lib;boost_fiber-vc140-mt-gd.lib;boost_filesystem-vc140-mt-gd.lib;boost_graph-vc140-mt-gd.lib;boost_iostreams-vc140-mt-gd.lib;boost_json-vc140-mt-gd.lib;boost_locale-vc140-mt-gd.lib;boost_log_setup-vc140-mt-gd.lib;boost_log-vc140-mt-gd.lib;boost_math_c99f-vc140-mt-gd.lib;boost_math_c99l-vc140-mt-gd.lib;boost_math_c99-vc140-mt-gd.lib;boost_math_tr1f-vc140-mt-gd.lib;boost_math_tr1l-vc140-mt-gd.lib;boost_math_tr1-vc140-mt-gd.lib;boost_nowide-vc140-mt-gd.lib;boost_program_options-vc140-mt-gd.lib;boost_python39-vc140-mt-gd.lib;boost_random-vc140-mt-gd.lib;boost_regex-vc140-mt-gd.lib;boost_serialization-vc140-mt-gd.lib;boost_stacktrace_noop-vc140-mt-gd.lib;boost_stacktrace_windbg_cached-vc140-mt-gd.lib;boost_stacktrace_windbg-vc140-mt-gd.lib;boost_system-vc140-mt-gd.lib;boost_thread-vc140-mt-gd.lib;boost_timer-vc140-mt-gd.lib;boost_type_erasure-vc140-mt-gd.lib;boost_unit_test_framework-vc140-mt-gd.lib;boost_wave-vc140-mt-gd.lib;boost_wserialization-vc140-mt-gd.lib;ceres-debug.lib;gflags_debug.lib;glog.lib;opencv_arucod.lib;opencv_barcoded.lib;opencv_bgsegmd.lib;opencv_bioinspiredd.lib;opencv_calib3dd.lib;opencv_ccalibd.lib;opencv_cored.lib;opencv_datasetsd.lib;opencv_dnn_objdetectd.lib;opencv_dnn_superresd.lib;opencv_dnnd.lib;opencv_dpmd.lib;opencv_faced.lib;opencv_features2dd.lib;opencv_flannd.lib;opencv_fuzzyd.lib;opencv_hdfd.lib;opencv_hfsd.lib;opencv_highguid.lib;opencv_img_hashd.lib;opencv_imgcodecsd.lib;opencv_imgprocd.lib;opencv_intensity_transformd.lib;opencv_line_descriptord.lib;opencv_mccd.lib;opencv_mld.lib;opencv_objdetectd.lib;opencv_optflowd.lib;opencv_phase_unwrappingd.lib;opencv_photod.lib;opencv_plotd.lib;opencv_qualityd.lib;opencv_rapidd.lib;opencv_regd.lib;opencv_saliencyd.lib;opencv_shaped.lib;opencv_stereod.lib;opencv_stitchingd.lib;opencv_structured_lightd.lib;opencv_superresd.lib;opencv_surface_matchingd.lib;opencv_textd.lib;opencv_trackingd.lib;opencv_videod.lib;opencv_videoiod.lib;opencv_videostabd.lib;opencv_wechat_qrcoded.lib;opencv_xfeatures2dd.lib;opencv_ximgprocd.lib;opencv_xobjdetectd.lib;opencv_xphotod.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;NOMINMAX;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\x64-windows\boost1_76_x64-windows\include;$(SolutionDir)dependencies\x64-windows\ceres_x64-windows\include;$(SolutionDir)dependencies\x64-windows\eigen3_x64-windows\include;$(SolutionDir)dependencies\x64-windows\gflags_x64-windows\include;$(SolutionDir)dependencies\x64-windows\glog_x64-windows\include;$(SolutionDir)dependencies\x64-windows\opencv4_x64-windows\include;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies\x64-windows\boost1_76_x64-windows\lib;$(SolutionDir)dependencies\x64-windows\ceres_x64-windows\lib;$(SolutionDir)dependencies\x64-windows\gflags_x64-windows\lib;$(SolutionDir)dependencies\x64-windows\glog_x64-windows\lib;$(SolutionDir)dependencies\x64-windows\opencv4_x64-windows\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_atomic-vc140-mt.lib;boost_chrono-vc140-mt.lib;boost_container-vc140-mt.lib;boost_context-vc140-mt.lib;boost_contract-vc140-mt.lib;boost_coroutine-vc140-mt.lib;boost_date_time-vc140-mt.lib;boost_exception-vc140-mt.lib;boost_fiber-vc140-mt.lib;boost_filesystem-vc140-mt.lib;boost_graph-vc140-mt.lib;boost_iostreams-vc140-mt.lib;boost_json-vc140-mt.lib;boost_locale-vc140-mt.lib;boost_log_setup-vc140-mt.lib;boost_log-vc140-mt.lib;boost_math_c99f-vc140-mt.lib;boost_math_c99l-vc140-mt.lib;boost_math_c99-vc140-mt.lib;boost_math_tr1f-vc140-mt.lib;boost_math_tr1l-vc140-mt.lib;boost_math_tr1-vc140-mt.lib;boost_nowide-vc140-mt.lib;boost_program_options-vc140-mt.lib;boost_python39-vc140-mt.lib;boost_random-vc140-mt.lib;boost_regex-vc140-mt.lib;boost_serialization-vc140-mt.lib;boost_stacktrace_noop-vc140-mt.lib;boost_stacktrace_windbg_cached-vc140-mt.lib;boost_stacktrace_windbg-vc140-mt.lib;boost_system-vc140-mt.lib;boost_thread-vc140-mt.lib;boost_timer-vc140-mt.lib;boost_type_erasure-vc140-mt.lib;boost_unit_test_framework-vc140-mt.lib;boost_wave-vc140-mt.lib;boost_wserialization-vc140-mt.lib;ceres.lib;gflags.lib;glog.lib;opencv_aruco.lib;opencv_barcode.lib;opencv_bgsegm.lib;opencv_bioinspired.lib;opencv_calib3d.lib;opencv_ccalib.lib;opencv_core.lib;opencv_datasets.lib;opencv_dnn.lib;opencv_dnn_objdetect.lib;opencv_dnn_superres.lib;opencv_dpm.lib;opencv_face.lib;opencv_features2d.lib;opencv_flann.lib;opencv_fuzzy.lib;opencv_hdf.lib;opencv_hfs.lib;opencv_highgui.lib;opencv_img_hash.lib;opencv_imgcodecs.lib;opencv_imgproc.lib;opencv_intensity_transform.lib;opencv_line_descriptor.lib;opencv_mcc.lib;opencv_ml.lib;opencv_objdetect.lib;opencv_optflow.lib;opencv_phase_unwrapping.lib;opencv_photo.lib;opencv_plot.lib;opencv_quality.lib;opencv_rapid.lib;opencv_reg.lib;opencv_saliency.lib;opencv_shape.lib;opencv_stereo.lib;opencv_stitching.lib;opencv_structured_light.lib;opencv_superres.lib;opencv_surface_matching.lib;opencv_text.lib;opencv_tracking.lib;opencv_video.lib;opencv_videoio.lib;opencv_videostab.lib;opencv_wechat_qrcode.lib;opencv_xfeatures2d.lib;opencv_ximgproc.lib;opencv_xobjdetect.lib;opencv_xphoto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

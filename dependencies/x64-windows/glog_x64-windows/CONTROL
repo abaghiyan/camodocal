@@ -1,0 +1,8 @@
+Package: glog
+Version: 0.4.0-3
+Depends: gflags
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4225f9b02d723e7651313927814895645fc6d4c84e8d08a7eb3758196af2b5f6
+Description: C++ implementation of the Google logging module
+Type: Port

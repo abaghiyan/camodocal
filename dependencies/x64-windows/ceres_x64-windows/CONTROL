@@ -1,0 +1,9 @@
+Package: ceres
+Version: 2.0.0
+Port-Version: 5
+Depends: eigen3, glog
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d0166a2457167b72053cf7ca63dab6ac4cd48eb90f18e789f5f4788190869dc4
+Description: non-linear optimization package
+Type: Port

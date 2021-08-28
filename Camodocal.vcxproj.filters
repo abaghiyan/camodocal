@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\calib">
+      <UniqueIdentifier>{43f9c8ff-e5d4-449b-a971-f911eb586d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\camera_models">
+      <UniqueIdentifier>{3d77ceab-de57-43a2-9acb-485717047ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\chessboard">
+      <UniqueIdentifier>{0246b81d-670e-4266-b8a3-e68721fb088c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gpl">
+      <UniqueIdentifier>{037c5a85-fc99-494f-90d0-eafd0688b696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sparse_graph">
+      <UniqueIdentifier>{4934848e-0582-4933-9079-cbf6585f6d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sparse_graph">
+      <UniqueIdentifier>{8ee1b8d1-7eba-4abd-8d88-d47000415e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\calib">
+      <UniqueIdentifier>{4fd4cbf6-d901-4a5b-ad0c-6ab588e5a9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\camera_models">
+      <UniqueIdentifier>{52e0a2ba-20b2-482b-9dc2-b5649ba17ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\chessboard">
+      <UniqueIdentifier>{e07a0eaa-7a0f-43f8-a691-0a10a2022724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gpl">
+      <UniqueIdentifier>{183a2f16-8644-41de-bad8-1e9bb70d071d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="intrinsic_calib.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sparse_graph\Transform.cc">
+      <Filter>Source Files\sparse_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="calib\CameraCalibration.cc">
+      <Filter>Source Files\calib</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\Camera.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\CameraFactory.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\CataCamera.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\CostFunctionFactory.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\EquidistantCamera.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\PinholeCamera.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_models\ScaramuzzaCamera.cc">
+      <Filter>Source Files\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="chessboard\Chessboard.cc">
+      <Filter>Source Files\chessboard</Filter>
+    </ClCompile>
+    <ClCompile Include="gpl\EigenQuaternionParameterization.cc">
+      <Filter>Source Files\gpl</Filter>
+    </ClCompile>
+    <ClCompile Include="gpl\gpl.cc">
+      <Filter>Source Files\gpl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calib\CameraCalibration.h">
+      <Filter>Header Files\calib</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\Camera.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\CameraFactory.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\CataCamera.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\CostFunctionFactory.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\EquidistantCamera.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\PinholeCamera.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_models\ScaramuzzaCamera.h">
+      <Filter>Header Files\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="chessboard\Chessboard.h">
+      <Filter>Header Files\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="chessboard\ChessboardCorner.h">
+      <Filter>Header Files\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="chessboard\ChessboardQuad.h">
+      <Filter>Header Files\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="chessboard\Spline.h">
+      <Filter>Header Files\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="gpl\EigenQuaternionParameterization.h">
+      <Filter>Header Files\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="gpl\EigenUtils.h">
+      <Filter>Header Files\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="gpl\gpl.h">
+      <Filter>Header Files\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="sparse_graph\Transform.h">
+      <Filter>Header Files\sparse_graph</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

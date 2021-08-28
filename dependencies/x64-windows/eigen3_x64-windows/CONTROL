@@ -1,0 +1,7 @@
+Package: eigen3
+Version: 3.3.9
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fc6738bf023c316289d0e66218f3a79fd2d18524bb19cc515f4b1c8ee46ad81e
+Description: C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
+Type: Port
